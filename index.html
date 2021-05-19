@@ -18,6 +18,7 @@
 <body>
     <!--Шапка сайта-->
     <header>
+      <div class="conteiner">
         <a class="logo pointkiller" href="/">Web<span class="logo-header">Studio</span></a>
         <!--Навигация по сайту-->
         <nav class="navigation">
@@ -31,92 +32,100 @@
             <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
             <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
         </ul>
+      </div>
     </header>
     <!--Контент-->
     <main>
         <!--Секция Герой-->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button" type="button">Заказать услугу</button>
+          <h1 class="hero-title">Эффективные решения </br> для вашего бизнеса</h1>
+          <button class="hero-button" type="button">Заказать услугу</button>
         </section>
         <!--Секция Преимущества-->
         <section class="section">
-            <h2>Наши преимущества</h2>
+            <!-- <h2>Наши преимущества</h2> -->
             <!--заголовок h2 скрыть-->
+          <div class="conteiner">
             <ul class="feature pointkiller">
-                <li>
-                    <h3 class="feature-title">Внимание к деталям</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li>
-                    <h3 class="feature-title">Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li>
-                    <h3 class="feature-title">Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li>
-                    <h3 class="feature-title">Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
+              <li>
+                <h3 class="feature-title">Внимание к деталям</h3>
+                <p class="feature-item">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              </li>
+              <li>
+                <h3 class="feature-title">Пунктуальность</h3>
+                <p class="feature-item">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              </li>
+               <li>
+                <h3 class="feature-title">Планирование</h3>
+                <p class="feature-item">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              </li>
+              <li>
+                <h3 class="feature-title">Современные технологии</h3>
+                <p class="feature-item">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              </li>
             </ul>
-        </section>
         <!--Секция Чем мы занимаемся-->
-        <section class="section">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="work pointkiller">
-                <li><a href="" class="work-link">
-                    <img src="./images/box1.jpg" alt="Изображение ноутбука с макетами"
-                    width="370" height="294"></a>
-                <li><a href="" class="work-link">
-                  <img src="./images/box2.jpg" alt="Изображение ноутбука с макетами"
-                  width="370" height="294"></a>
-                </li>
-                <li><a href="" class="work-link">
-                  <img src="./images/box3.jpg" alt="Изображение планшета с цветовой диаграммой"
-                  width="370" height="294"></a>
-                </li>
+              <li>
+                <a href="" class="work-link">
+                <img class="work-img" src="./images/box1.jpg" alt="Изображение ноутбука с макетами"
+                width="370" height="294"></a>
+              </li>
+              <li>
+                <a href="" class="work-link">
+                <img class="work-img"  src="./images/box2.jpg" alt="Изображение ноутбука с макетами"
+                width="370" height="294"></a>
+              </li>
+              <li>
+                <a href="" class="work-link">
+                <img  class="work-img" src="./images/box3.jpg" alt="Изображение планшета с цветовой диаграммой"
+                width="370" height="294"></a>
+              </li>
             </ul>
+          </div>
         </section>
         <!--Секция Наша команда-->
         <section class="section">
+          <div class="conteiner">
             <h2 class="section-title">Наша команда</h2>
             <ul class="team pointkiller">
-                <li>
+                <li class="card">
                     <a href="" class="team-link">
-                        <img src="./images/tm1.jpg" alt="Фото Игоря Демьяненко" width="270" height="260">
+                        <img class="team-img" src="./images/tm1.jpg" alt="Фото Игоря Демьяненко" width="270" height="260">
                         <h3 class="team-title">Игорь Демьяненко</h3>
                         <p class="team-description">Product Designer</p>
                     </a>
                 </li>
-                <li>
+                <li class="card">
                     <a href="" class="team-link">
-                        <img src="./images/tm2.jpg" alt="Фото Ольги Репиной" width="270" height="260">
+                        <img class="team-img" src="./images/tm2.jpg" alt="Фото Ольги Репиной" width="270" height="260">
                         <h3 class="team-title">Ольга Репина</h3>
                         <p class="team-description">Frontend Developer</p>
                     </a>
                 </li>
-                <li>
+                <li class="card">
                     <a href="" class="team-link">
-                        <img src="./images/tm3.jpg" alt="Фото Николая Тарасова" width="270" height="260">
+                        <img class="team-img" src="./images/tm3.jpg" alt="Фото Николая Тарасова" width="270" height="260">
                         <h3 class="team-title">Николай Тарасов</h3>
                         <p class="team-description">Marketing</p>
                     </a>
                 </li>
-                <li>
+                <li class="card">
                     <a href="" class="team-link">
-                        <img src="./images/tm4.jpg" alt="Фото Михаила Ермакова" width="270" height="260">
+                        <img class="team-img" src="./images/tm4.jpg" alt="Фото Михаила Ермакова" width="270" height="260">
                         <h3 class="team-title">Михаил Ермаков</h3>
                         <p class="team-description">UI Designer</p>
                     </a>
                 </li>
             </ul>
+          </div>
         </section>
     </main>
     <!--Подвал-->
     <footer class="footer">
-        <a class="logo pointkiller" href="/">Web<span class="logo-footer">Studio</span></a>
+      <div class="conteiner">
+        <a class="logo bottom pointkiller" href="/">Web<span class="logo-footer">Studio</span></a>
         <address class="address">
             <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="address-list pointkiller">
@@ -124,6 +133,7 @@
                 <li><a href="tel:+380991111111" class="address-link">+38 099 111 11 11</a></li>
             </ul>
         </address>
+      </div>
     </footer>
 </body>
 </html>
