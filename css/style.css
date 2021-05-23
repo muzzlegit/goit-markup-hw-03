@@ -32,6 +32,9 @@ body {
 }
 /*ШАПКА*/
 /*стилизация логотипа*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .conteiner.nav {
   display: flex;
   align-items: center;
@@ -153,7 +156,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   color: var(--primary-text-color);
-  outline: 2px solid gold;
 }
 .section-title {
   margin-top: 0;
@@ -174,7 +176,7 @@ body {
   line-height: 1.71;
 }
 .feature .item {
-  width: 270px;
+  flex-basis: 270px;
 }
 .feature .item:not(:last-child) {
   margin-right: 30px;
@@ -195,7 +197,7 @@ body {
   display: flex;
 }
 .work .item {
-  width: 370px;
+  width: calc((100% - 30px * 2) / 3);
 }
 .work .item:not(:last-child) {
   margin-right: 30px;
@@ -211,15 +213,21 @@ body {
   display: flex;
 }
 .card {
-  width: 270px;
-
+  width: calc((100% - 30px * 3) / 4);
   background-color: #ffffff;
 }
 .card:not(:last-child) {
   margin-right: 30px;
 }
+
 .team-link {
   text-decoration: none;
+}
+.team-img {
+  display: block;
+}
+.team-box {
+  padding: 30px;
 }
 .team-title {
   margin-top: 0;
@@ -236,8 +244,7 @@ body {
   color: var(--accent-text-color);
 }
 .team-description {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
 
   text-align: center;
   font-size: 16px;
@@ -248,10 +255,7 @@ body {
 .team-description:focus {
   color: var(--accent-text-color);
 }
-.team-img {
-  display: block;
-  margin-bottom: 30px;
-}
+
 /*СЕКЦИИ ОСНОВНОГО КОНТЕНТА*/
 
 /*Футер*/
@@ -317,7 +321,7 @@ body {
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .filter-list .item:not(:last-child) {
   margin-right: 8px;
@@ -328,8 +332,7 @@ body {
   flex-wrap: wrap;
 }
 .examples .item {
-  width: 370px;
-  border: 1px solid #eeeeee;
+  width: calc((100% - 30px * 2) / 3);
 }
 .examples .item:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -343,10 +346,16 @@ body {
 }
 .examples-img {
   display: block;
-  margin-bottom: 20px;
+}
+.examples-box {
+  padding: 20px;
+  border-bottom: 1px solid var(--bg-section-color);
+  border-left: 1px solid var(--bg-section-color);
+  border-right: 1px solid var(--bg-section-color);
 }
 .examples-title {
-  margin: 0 24px 4px 24px;
+  margin-top: 0;
+  margin-bottom: 4px;
 
   font-size: 18px;
   line-height: 2;
@@ -354,8 +363,7 @@ body {
   color: var(--secondary-text-color);
 }
 .examples-description {
-  margin: 0 24px 20px 24px;
-
+  margin: 0;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
