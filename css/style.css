@@ -8,6 +8,7 @@
   --bg-section-color: #f5f4fa;
 
   --bg-button-color: #f5f4fa;
+  --bg-hero-button-color: #188ce8;
   --active-bg-button-color: #2196f3;
 }
 
@@ -150,7 +151,7 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188ce8;
+  background-color: var(--bg-hero-button-color);
 }
 /* секции основных разделов */
 .section {
@@ -173,9 +174,6 @@ body {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
-}
-.conteiner.feature-block {
-  padding-top: 99px;
 }
 .feature .item {
   flex-basis: 270px;
